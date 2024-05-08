@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { Container } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
 
 const Banner = () => {
@@ -9,7 +8,7 @@ const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Backend Developer", "Web Developer", "Web Designer" ];
+    const toRotate = [ "Backend Developer", "Software Engineer", "Application Developer" ];
     const period = 2000;
   
     useEffect(() => {
@@ -48,11 +47,9 @@ const Banner = () => {
     return (
       <section className="banner" id="home">
         <Container>
-          <Row className="align-items-center justify-content-center">
-            <Col xs={12} md={8} className="text-justify">
-              <TrackVisibility>
-                {({ isVisible }) =>
-                  <div className={isVisible ? "animate_animated animate_fadeIn" : ""}>
+            <TrackVisibility>
+            {({ isVisible }) =>
+                <div className={isVisible ? "animate_animated animate_fadeIn banner-container" : "banner-container"}>
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{"Hi! I'm Adama "} 
                         <span className="txt-rotate" data-period="1000" data-rotate='[ "Backend Developer", "Web Developer", "Web Designer" ]'>
@@ -60,15 +57,13 @@ const Banner = () => {
                         </span>
                     </h1>
                     <p>
-                      Talented Java Developer with 5 years of hands-on experience increasing efficiency and productivity by developing comprehensive applications.
-                      Effective team leader who enhances development processes by identifying and resolving technical issues.
-                      Skilled in using technologies such as Spring Boot, React, Java, JavaScript, RESTful, MongoDB, PostgreSQL, and MySQL.
+                        Talented Java Developer with 5 years of hands-on experience increasing efficiency and productivity by developing comprehensive applications.
+                        Effective team leader who enhances development processes by identifying and resolving technical issues.
+                        Skilled in using technologies such as Spring Boot, React, Java, JavaScript, RESTful, MongoDB, PostgreSQL, and MySQL.
                     </p>
-                    <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
-                  </div>}
-              </TrackVisibility>
-            </Col>
-          </Row>
+                </div>
+            }
+            </TrackVisibility>
         </Container>
       </section>
     );
