@@ -322,6 +322,52 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 
+/************ Experience Css ************/
+
+.experience {
+  text-align: justify;
+}
+
+.experience-entry {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  position: relative;
+  padding-left: 50px; /* Adjust space for the gradient circle and line */
+}
+
+.experience-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  position: absolute;
+  left: 10px; /* Adjust horizontal position */
+  top: 0px; /* Adjust vertical position */
+}
+
+.experience-line {
+  position: absolute;
+  left: 25px; /* Center the line relative to the circle */
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Line thickness */
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+}
+
+.exp {
+  font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.experience-period {
+  padding: 5px 8px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
