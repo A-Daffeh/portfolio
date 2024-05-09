@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Skills from './components/Skills'
 import PersonalInfo from './components/PersonalInfo'
 import Experience from './components/Experience'
+import Education from './components/Education'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -13,8 +16,11 @@ function App() {
       <NavBar />
       <Banner />
       <PersonalInfo />
-      <Experience />
       <Skills />
+      <Experience />
+      <Education />
+      <Contact />
+      <Footer />
     </>
   )
 }

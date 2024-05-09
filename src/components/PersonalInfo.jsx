@@ -5,7 +5,7 @@ const PersonalInfo = () => {
         <div className="container">
             <div className="d-flex justify-content-between align-items-center">
                 <div>
-                    <FiPhone className="info-icon" /> <span><strong className="skillset">Phone:</strong> (206) 771-2050</span>
+                    <FiPhone className="info-icon" /> <span><strong className="skillset">Phone:</strong> +1 (206) 771-2050</span>
                 </div>
 
                 <div>

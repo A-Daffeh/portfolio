@@ -50,8 +50,8 @@ const Banner = () => {
             <TrackVisibility>
             {({ isVisible }) =>
                 <div className={isVisible ? "animate_animated animate_fadeIn banner-container" : "banner-container"}>
-                    <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{"Hi! I'm Adama "} 
+                    <span className="tagline">Hi! Welcome to my Portfolio</span>
+                    <h1>{"I'm Adama "} 
                         <span className="txt-rotate" data-period="1000" data-rotate='[ "Backend Developer", "Web Developer", "Web Designer" ]'>
                             <span className="wrap">{text}</span>
                         </span>
