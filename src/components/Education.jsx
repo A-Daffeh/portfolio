@@ -6,7 +6,7 @@ const Education = () => {
             <Container>
                 <div className='education-bx'>
                     <h2 className='edu'>Education</h2>
-                    <Row className="mb-5">
+                    <Row className="mb-2">
                         <Col xs={12}>
                             <div className="education-entry">
                                 <div className="education-icon"></div>

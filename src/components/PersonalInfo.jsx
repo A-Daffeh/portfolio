@@ -1,4 +1,5 @@
 import { FiPhone, FiMail, FiMapPin, FiDownload } from "react-icons/fi";
+import resumeDocument from '../assets/DAFFEH_ADAMA-Resume.doc';
 
 const PersonalInfo = () => {
     return (
@@ -16,7 +17,9 @@ const PersonalInfo = () => {
                     <FiMapPin className="info-icon" /> <span><strong className="skillset">Address:</strong> 14912 16th Pl W, Lynnwood, WA, USA</span>
                 </div>
                 <div className="download-resume">
-                    <FiDownload className="me-2" />Download Resume
+                    <a href={resumeDocument} download="Resume_Adamadaffeh.docx">
+                    <FiDownload className="me-2" />Resume
+                    </a>
                 </div>
             </div>
             

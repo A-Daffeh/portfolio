@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import logo from '../assets/images/profile.jpg';
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -27,8 +25,7 @@ const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
-    const onUpdateActiveLink = (e, link) => {
-        e.preventDefault();
+    const onUpdateActiveLink = (link) => {
         setActiveLink(link);
     }
 
@@ -52,9 +49,8 @@ const NavBar = () => {
                         </Nav>
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="#"><img src={ navIcon1 } alt="" /></a>
-                                <a href="#"><img src={ navIcon2 } alt="" /></a>
-                                <a href="#"><img src={ navIcon3 } alt="" /></a>
+                                <a href="https://linkedin.com/in/adama-daffeh" target="_blank"><FaLinkedin /></a>
+                                <a href="https://github.com/A-Daffeh" target="_blank"><FaGithub /></a>
                             </div>
                             <HashLink to='#connect'>
                                 <button className="vvd"><span>Let's Connect</span></button>

@@ -86,7 +86,7 @@ nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
@@ -146,12 +146,12 @@ span.navbar-text {
 .social-icon a:hover::before {
     transform: scale(1);
 }
-.social-icon a img {
+.social-icon a svg {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover svg {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
@@ -253,7 +253,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner p {
+.banner p,
+.blog p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -267,6 +268,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Personal Info ***********/
+.download-resume a {
+  text-decoration: none;
+  color: #fff;
+}
 .download-resume {
   padding: 5px 8px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 189, 47, 0.5) 111.58%);
@@ -357,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 189, 47, 0.5) 111.58%);
 }
 
-.exp {
+.exp, .blg {
   font-size: 45px;
 	font-weight: 700;
   text-align: center;
@@ -376,7 +381,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .education {
   text-align: justify;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .education-bx {
@@ -468,7 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 189, 47, 0.5) 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -500,7 +505,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 189, 47, 0.5) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -543,6 +548,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/************ Blog Css *****************/
+.blog button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.blog button span {
+  z-index: 1;
+  position: relative;
+}
+
+.blog button:hover {
+  color: #fff;
+}
+.blog button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.blog button:hover::before {
+  width: 100%;
 }
 
 /************ Projects Css ************/
@@ -630,6 +671,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 14px;
   color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+/****** Blog Modal ********/
+.custom-modal-size .modal-dialog {
+  max-width: 80%;
+  color: #000;
+}
+
+.modal-dialog strong {
+  font-weight: 700;
+  font-size: 18px;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
