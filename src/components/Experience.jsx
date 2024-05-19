@@ -6,7 +6,7 @@ const Experience = () => {
             <Container>
                 <h2 className='exp'>Experience</h2>
                 <Row className="mb-5">
-                    <Col xs={6}>
+                    <Col xs={12} md={6}>
                         <div className="experience-entry">
                             <div className="experience-icon"></div>
                             <div className="experience-line"></div>
@@ -27,7 +27,7 @@ const Experience = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} md={6}>
                         <div className="experience-entry">
                             <div className="experience-icon"></div>
                             <div className="experience-line"></div>
@@ -50,7 +50,7 @@ const Experience = () => {
                 </Row>
 
                 <Row className="mb-4">
-                    <Col xs={6}>
+                    <Col xs={12} md={6}>
                         <div className="experience-entry">
                             <div className="experience-icon"></div>
                             <div className="experience-line"></div>
@@ -71,7 +71,7 @@ const Experience = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} md={6}>
                         <div className="experience-entry">
                             <div className="experience-icon"></div>
                             <div className="experience-line"></div>
@@ -95,7 +95,7 @@ const Experience = () => {
 
                 
                 <Row className="mb-4">
-                    <Col xs={6}>
+                    <Col xs={12} md={6}>
                         <div className="experience-entry">
                             <div className="experience-icon"></div>
                             <div className="experience-line"></div>
