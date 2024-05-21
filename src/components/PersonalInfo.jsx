@@ -13,11 +13,11 @@ const PersonalInfo = () => {
           <FiMail className="info-icon" /> <span><strong className="skillset">Email:</strong> adamadaffeh7@gmail.com</span>
         </div>
 
-        <div className="col-12 col-md-6 col-lg-3 mb-3">
+        <div className="col-12 col-md-6 col-lg-4 mb-3">
           <FiMapPin className="info-icon" /> <span><strong className="skillset">Address:</strong> 14912 16th Pl W, Lynnwood, WA, USA</span>
         </div>
 
-        <div className="col-12 col-md-6 col-lg-3 mb-3">
+        <div className="col-12 col-md-6 col-lg-2 mb-3">
           <div className="download-resume">
             <a href={resumeDocument} download="Resume_Adamadaffeh.docx">
               <FiDownload className="me-2" />Resume

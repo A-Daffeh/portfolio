@@ -13,7 +13,9 @@
     "client": "vite"
   },
   "dependencies": {
+    "axios": "^1.7.1",
     "bootstrap": "^5.3.3",
+    "concurrently": "8.2.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "nodemailer": "^6.9.13",
@@ -26,8 +28,7 @@
     "react-on-screen": "^2.1.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.23.0",
-    "react-router-hash-link": "^2.4.3",
-    "concurrently": "8.2.2"
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
