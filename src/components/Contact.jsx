@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/images/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
+import axios from 'axios';
 
 const Contact = () => {
     const formInitialDetails = {
@@ -25,19 +25,13 @@ const Contact = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch("http://localhost:5000/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(formDetails),
-        });
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code == 200) {
+        try {
+          let response = await axios.post('https://akdokz9ztl.execute-api.us-east-1.amazonaws.com/prod/contact', formDetails);
+          setButtonText("Send");
+          let result = await response.json();
+          setFormDetails(formInitialDetails);
           setStatus({ succes: true, message: 'Message sent successfully'});
-        } else {
+        } catch {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
         }
       };
