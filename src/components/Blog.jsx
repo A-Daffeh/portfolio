@@ -42,7 +42,7 @@ function Blog() {
         </section>
         <Modal show={show} onHide={handleClose} id="blog-modal" className="custom-modal-size">
             <Modal.Header closeButton>
-                <Modal.Title>Creating a CI/CD Pipeline for Java Applications on AWS</Modal.Title>
+                <Modal.Title>Enhancing Reliability in Serverless Computing: Mastering AWS Lambda Dead Letter Queues</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <img src={blog1} alt="Blog Information" /> <br />
