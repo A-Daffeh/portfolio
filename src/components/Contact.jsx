@@ -61,8 +61,12 @@ const Contact = () => {
         }
         setButtonText("Sending...");
         try {
-            let response = await axios.post('https://akdokz9ztl.execute-api.us-east-1.amazonaws.com/prod/contact', formDetails);
-            let result = await response.json();
+              let response = await axios.post('https://n8zahdei44.execute-api.us-east-1.amazonaws.com/prod/contact', formDetails, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            let result = response.data;
             setFormDetails(formInitialDetails);
             setStatus({ success: true, message: 'Message sent successfully'});
             setButtonText("Send");
